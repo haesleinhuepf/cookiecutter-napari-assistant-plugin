@@ -21,5 +21,7 @@
         "Apache Software License 2.0",
         "GNU LGPL v3.0",
         "GNU GPL v3.0"
-    ]
+    ],
+	"python_parameters":"threshold:int=1",
+    "python_code" : "data < threshold",
 }
