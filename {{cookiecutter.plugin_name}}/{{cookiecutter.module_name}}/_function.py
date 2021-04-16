@@ -23,27 +23,10 @@ def napari_experimental_provide_function():
     # we can return a single function
     # or a tuple of (function, magicgui_options)
     # or a list of multiple functions with or without options, as shown here:
-    return [threshold, image_arithmetic]
+    return [process_image]
 
 
 # 1.  First example, a simple function that thresholds an image and creates a labels layer
-def threshold(data: "ImageData", threshold: int) -> "LabelsData":
-    """Threshold an image and return a mask."""
-    return (data > threshold).astype(int)
-
-
-# 2. Second example, a function that adds, subtracts, multiplies, or divides two layers
-
-# using Enums is a good way to get a dropdown menu.  Used here to select from np functions
-class Operation(Enum):
-    add = np.add
-    subtract = np.subtract
-    multiply = np.multiply
-    divide = np.divide
-
-
-def image_arithmetic(
-    layerA: "ImageData", operation: Operation, layerB: "ImageData"
-) -> "LayerDataTuple":
-    """Adds, subtracts, multiplies, or divides two same-shaped image layers."""
-    return (operation.value(layerA, layerB), {"colormap": "turbo"})
+def process_image(data: "ImageData", {{cookiecutter.python_parameters}}) -> "LabelsData":
+    
+	{{cookiecutter.python_code}}
