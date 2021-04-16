@@ -23,5 +23,5 @@
         "GNU GPL v3.0"
     ],
 	"python_parameters":"threshold:int=1",
-    "python_code" : "data < threshold",
+    "python_code" : "data < threshold"
 }
