@@ -24,7 +24,7 @@ def napari_experimental_provide_function():
     return [process_image]
 
 
-# 1.  First example, a simple function that thresholds an image and creates a labels layer
-def process_image(data: ImageData, {{cookiecutter.python_parameters}}) -> LabelsData:
+# 1.  First example, a simple function that processes an image and creates a labels or image layer
+def process_image(data: ImageData, {{cookiecutter.python_parameters}}) -> {{cookiecutter.output_type}}:
     
 	{{cookiecutter.python_code}}
