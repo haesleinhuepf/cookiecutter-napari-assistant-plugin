@@ -20,13 +20,6 @@ with open('requirements.txt') as f:
         if len(stripped) > 0:
             requirements.append(stripped)
 
-{% if cookiecutter.plugin_name == "foo-bar" %}
-# extracted because it breaks testing of this cookiecutter template
-use_scm = False
-{% else %}
-# https://github.com/pypa/setuptools_scm
-use_scm = {"write_to": "{{cookiecutter.module_name}}/_version.py"}
-{% endif %}
 setup(
     name='{{cookiecutter.plugin_name}}',
     author='{{cookiecutter.full_name}}',
@@ -39,17 +32,15 @@ setup(
     packages=find_packages(),
     python_requires='>=3.6',
     install_requires=requirements,
-    #use_scm_version=use_scm,
-	version="0.1.0",
+    version="0.1.0",
     setup_requires=['setuptools_scm'],
     classifiers=[
-        'Development Status :: 4 - Beta',
-        'Intended Audience :: Developers',
+        'Development Status :: 2 - Pre-Alpha',
+        'Intended Audience :: Science/Research',
         'Framework :: napari',
-        'Topic :: Software Development :: Testing',
+        'Topic :: Scientific/Engineering :: Image Processing',
         'Programming Language :: Python',
         'Programming Language :: Python :: 3',
-        'Programming Language :: Python :: 3.7',
         'Programming Language :: Python :: 3.8',
         'Programming Language :: Python :: 3.9',
         'Operating System :: OS Independent',

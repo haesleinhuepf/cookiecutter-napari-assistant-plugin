@@ -28,6 +28,6 @@ def napari_experimental_provide_function():
 # 1.  First example, a simple function that processes an image and creates a labels or image layer
 @register_function("{{cookiecutter.tools_menu}} > {{cookiecutter.menu_name}}")
 @time_slicer
-def process_image(data: ImageData, {{cookiecutter.python_parameters}}) -> {{cookiecutter.output_type}}:
+def process_image({{cookiecutter.python_parameters}}) -> {{cookiecutter.output_type}}:
     
 	{{cookiecutter.python_code}}
