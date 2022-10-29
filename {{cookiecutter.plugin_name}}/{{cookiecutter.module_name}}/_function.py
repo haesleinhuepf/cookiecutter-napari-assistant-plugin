@@ -12,7 +12,8 @@ import numpy as np
 from napari_plugin_engine import napari_hook_implementation
 
 from napari.types import ImageData, LabelsData, LayerDataTuple
-
+from napari_tools_menu import register_function
+from napari_time_slicer import time_slicer
 
 # This is the actual plugin function, where we export our function
 # (The functions themselves are defined below)
@@ -25,6 +26,8 @@ def napari_experimental_provide_function():
 
 
 # 1.  First example, a simple function that processes an image and creates a labels or image layer
+@register_function("{{cookiecutter.tools_menu}} > {{cookiecutter.menu_name}}")
+@time_slicer
 def process_image(data: ImageData, {{cookiecutter.python_parameters}}) -> {{cookiecutter.output_type}}:
     
 	{{cookiecutter.python_code}}
