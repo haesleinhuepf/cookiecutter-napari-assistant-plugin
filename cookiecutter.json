@@ -24,5 +24,8 @@
     ],
     "python_parameters":"threshold:int=1",
     "python_code" : "data < threshold",
-    "output_type" : "LabelsData"
+    "output_type" : "LabelsData",
+    "tools_menu" : "Scripts",
+    "menu_name" : "Process image",
+    "pip_requirements" : ""
 }

@@ -1,5 +1,7 @@
 napari-plugin-engine>=0.1.4
 numpy
-pyopencl
-pyclesperanto-prototype
-scikit-image
+napari-tools-menu
+napari-time-slicer
+
+# TODO: Make sure that these packages exist on https://pypi.org or update the list
+{{cookiecutter.pip_requirements}}
