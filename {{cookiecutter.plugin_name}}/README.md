@@ -12,17 +12,25 @@
 
 ----------------------------------
 
-This [napari] plugin was generated with [Cookiecutter] using with haesleinhuepfs modified napari [cookiecutter-napari-plugin] template.
+This [napari] plugin was generated with [Cookiecutter] using haesleinhuepf's [cookiecutter-napari-assistant-plugin] template.
+
+## Checklist
+After the code for this plugin has been generated, go through this list:
+* Write a minimal user guide below. Assume someone finds your plugin online and wonders how to quickly try it on your example data and on their data. Where should they start? What are the minimum necessary steps that need to be listed and explained? 
+* Search for "TODO" in this file and the code to make sure all functions are properly documented.
+* Make sure the requirements.txt correctly lists all dependencies and installation works as described below.
+* Remove this checklist from the documentation.
 
 ## Usage
 
 This plugin can be started from the menu `Tools > {{cookiecutter.tools_menu}} > {{cookiecutter.menu_name}} `.
 
-TODO: Explain the parameters of your plugin.
+TODO: Explain how to use your plugin.
+* Tell the user for what kind of data this plugin was developed.
+* Provide a link to example data (e.g. on https://zenodo.org) so that new users can apply your plugin to data it has been developed for, before they try it on their own data.
 * Tell the user what values to enter and why. E.g. "if the resulting segmentation shows too large objects, enter a smaller sigma value."
-* Tell the user how they can validate that your plugin processed their data properly
-* Provide a link to example data (e.g. on https://zenodo.org) so that new users can apply your plugin to data it has been developed for.
-Please put a screenshot here, e.g. a `screenshot.png` in a sub-folder called `docs`.
+* Tell the user how they can validate that your plugin processed their data properly.
+* Please put a screenshot here, e.g. a `screenshot.png` in a sub-folder called `docs`. It serves as graphical abstract.
 
 ![image](https://github.com/{{cookiecutter.github_username}}/{{cookiecutter.plugin_name}}//raw/main/docs/screenshot.png)
 
@@ -97,7 +105,7 @@ If you encounter any problems, please [file an issue] along with a detailed desc
 [GNU LGPL v3.0]: http://www.gnu.org/licenses/lgpl-3.0.txt
 [Apache Software License 2.0]: http://www.apache.org/licenses/LICENSE-2.0
 [Mozilla Public License 2.0]: https://www.mozilla.org/media/MPL/2.0/index.txt
-[cookiecutter-napari-plugin]: https://github.com/haesleinhuepf/cookiecutter-napari-plugin
+[cookiecutter-napari-plugin]: https://github.com/haesleinhuepf/cookiecutter-napari-assistant-plugin
 [file an issue]: https://github.com/{{cookiecutter.github_username}}/{{cookiecutter.plugin_name}}/issues
 [napari]: https://github.com/napari/napari
 [tox]: https://tox.readthedocs.io/en/latest/
