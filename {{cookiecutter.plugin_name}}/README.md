@@ -54,6 +54,20 @@ TODO: Use this section to list/link other napari plugins that have similar funct
 Contributions are very welcome. Tests can be run with [tox], please ensure
 the coverage at least stays the same before you submit a pull request.
 
+## Installation instructions for developers
+
+Clone the github repository:
+
+```
+conda install git
+
+git clone https://github.com/{{cookiecutter.github_username}}/{{cookiecutter.plugin_name}}.git
+
+cd {{cookiecutter.plugin_name}}
+
+pip install -e .
+```
+
 ## Deployment to collaborators
 
 You can package your plugin as zip file and send it via email to collaborators. They can then install it using pip:
